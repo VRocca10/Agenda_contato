@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda - EBAC</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="./imagens/agenda.jpeg" alt="Agenda Telefonica" />
+            <h1>Agenda de Contatos - EBAC</h1>
+        </header>
+        <form id="form-contatos">
+            <input type="text" id="nome-contato" required placeholder="Nome" />
+            <input type="number" id="telefone-contato" required placeholder="Contato" />
+            <input type="email" id="email-contato" required placeholder="E-mail" />
+            <button type="submit">SALVAR </button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome </th>
+                    <th>Telefone</th>
+                    <th>E-mail</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tfoot>
+                <tr>
+                    <td id="agenda-nome">---</td>
+                    <td id="agenda-telefone">---</td>
+                    <td id="agenda-email">---</td>
+                </tr>
+                <tr>
+                    <td>Contatos Cadastrados</td>
+                    <td id="contador">----</td>
+                </tr>
+            </tfoot>
+            </tbody>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
